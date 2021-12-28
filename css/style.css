@@ -5,8 +5,10 @@ body {
   font-size: 14px;
   font-weight: 300;
   line-height: 25px;
-  color: #3b4045;
-  font-family: "Josefin Sans", sans-serif;
+  color: #fff;
+  background-color: #20aa29;
+  font-family: "Yantramanav", serif;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -172,10 +174,15 @@ a:active {
   display: inline-block;
   background-color: #f9a743;
   box-shadow: 0 15px 40px rgba(249, 167, 68, 0.5);
-  background-image: linear-gradient(bottom, rgba(255, 239, 206, 0) 0%, rgba(255, 239, 206, 0.25) 100%);
+  background-image: linear-gradient(
+    bottom,
+    rgba(255, 239, 206, 0) 0%,
+    rgba(255, 239, 206, 0.25) 100%
+  );
 }
 
-.btn-main:hover, .btn-main:focus {
+.btn-main:hover,
+.btn-main:focus {
   background-color: #f9a743;
   color: #fff;
 }
@@ -189,7 +196,7 @@ a:active {
 
 /*Preloader*/
 #preloader-wrapper {
-  background-color: #fff;
+  background-color: #20aa29;
   bottom: auto;
   height: 100%;
   left: auto;
@@ -206,7 +213,7 @@ a:active {
 .pre-loader {
   width: 130px;
   height: 130px;
-  background: #f9a743;
+  background: #20aa29;
   border-radius: 50%;
   animation: loading 6s infinite reverse linear;
   position: relative;
@@ -221,7 +228,7 @@ a:active {
   display: block;
   font-size: 40px;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   color: #fff;
 }
 
@@ -345,10 +352,16 @@ a:active {
 
 /* navigation */
 .navbar-brand {
-  color: #444;
+  color: #fff;
+
   font-size: 25px;
-  margin: 0;
+  margin: 24px auto;
   line-height: 1;
+}
+
+.navbar-brand > img {
+  height: 80px;
+  max-width: 100%;
 }
 
 .nav-link {
@@ -388,7 +401,7 @@ a:active {
 
 .gallery .block:hover .gallery-overlay {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
   opacity: 1;
 }
 
@@ -403,7 +416,7 @@ a:active {
   color: inherit;
   -webkit-transform: scale(0.5);
   transform: scale(0.5);
-  transition: all .3s;
+  transition: all 0.3s;
   z-index: 2;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -506,25 +519,16 @@ a:active {
 
 footer {
   text-align: center;
-  background: #f4f4f4;
-  padding: 50px 0px;
+  padding: 24px 0px;
 }
 
 footer .footer-logo {
-  color: #555;
   display: block;
 }
 
 footer p.copyright-text {
-  font-weight: 300;
   font-size: 12px;
-  color: #888;
-  letter-spacing: 3px;
   margin-top: 15px;
-}
-
-footer p.copyright-text a {
-  color: #282828;
 }
 
 footer p.copyright-text a:hover {
